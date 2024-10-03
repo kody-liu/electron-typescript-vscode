@@ -4,19 +4,18 @@
   "main": "build/main.js",
   "type": "module",
   "scripts": {
-    "compile": "tsc && copyfiles -u 1 src/*.html build",
+    "compile": "tsc && copyfiles -u 1 src/*.html build && tsc -b && vite build",
     "start": "npm run compile && electron ."
   },
   "author": "Andreas Bartho",
   "license": "MIT",
   "description": "",
-  "dependencies": {
-    "@frontend": "../frontend"
-  },
   "devDependencies": {
     "electron": "^31.3.1",
     "typescript": "^5.5.4",
-    "copyfiles": "^2.4.1"
+    "copyfiles": "^2.4.1",
+    "vite": "^5.4.1",
+    "@vitejs/plugin-react": "^4.3.1"
   },
   "engines": {
     "node": "^20"

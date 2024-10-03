@@ -1,3 +1,3 @@
-import { render, App } from '@frontend'
+// import { render, App } from '@frontend'
 
-render(App())
+// render(App())
