@@ -8,6 +8,11 @@ export default defineConfig({
       input: {
         main: 'src/index.html', // Explicitly specify the entry point
       },
+      output: {
+        entryFileNames: 'main.js', // Set the output file name for the main entry
+        chunkFileNames: '[name].js', // Set names for other chunks
+        assetFileNames: '[name].[ext]', // Keep asset filenames clean
+      },
     },
   },
 });
