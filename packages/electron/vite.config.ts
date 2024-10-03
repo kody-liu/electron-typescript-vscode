@@ -6,11 +6,12 @@ export default defineConfig({
     outDir: '../build', // Output the build in the 'build' folder
     rollupOptions: {
       input: {
-        main: 'src/index.html', // Explicitly specify the entry point
+        main: 'src/main.ts', // Entry point for Electron's main process
+        renderer: 'src/renderer.ts', // Entry point for the renderer process (Electron window)
       },
       output: {
-        entryFileNames: 'main.js', // Set the output file name for the main entry
-        chunkFileNames: '[name].js', // Set names for other chunks
+        entryFileNames: '[name].js', // Output as main.js and renderer.js
+        chunkFileNames: '[name].js', // Names for dynamic imports or shared chunks
         assetFileNames: '[name].[ext]', // Keep asset filenames clean
       },
     },
