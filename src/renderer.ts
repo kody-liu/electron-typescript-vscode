@@ -1,3 +1,3 @@
 function changeBackgroundColor(): void {
-    document.body.style.backgroundColor = 'red';
+    document.body.style.backgroundColor = 'blue';
 }

@@ -105,3 +105,6 @@ Visual Studio Code can only run a single configuration at a time, but we need to
   }
 ]
 ```
+
+TODO: Hot reload and build when save
+TODO: Hot reload the code
