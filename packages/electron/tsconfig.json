@@ -1,16 +1,33 @@
 {
   "compilerOptions": {
+    "paths": {
+      "@frontend": ["../frontend/src/index.ts"],
+    },
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
-    "target": "ESNext",                       // Electron 31 is based on Chromium 126, which fully supports ES2021
                                               // https://compat-table.github.io/compat-table/es2016plus/
-    "module": "NodeNext",
     "esModuleInterop": true,                  // Enables emit interoperability between CommonJS and ES 
     "sourceMap": true,                        // Generates corresponding '.map' file.
     "outDir": "./build",
     "strict": true,                           // Enable all strict type-checking options.
     "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
     "skipLibCheck": true,                      // Skip type checking of all declaration files (*.d.ts). Good for development compile speed, but worth disabling for release.
-    "moduleResolution": "NodeNext"
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+
+    /* Bundler mode */
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   }
 }

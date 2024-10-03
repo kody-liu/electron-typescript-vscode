@@ -1,3 +1,3 @@
-export function changeBackgroundColor(): void {
-    document.body.style.backgroundColor = 'blue';
-}
+import { render, App } from '@frontend'
+
+render(App())

@@ -7,6 +7,10 @@ settings:
 importers:
 
   packages/electron:
+    dependencies:
+      '@frontend':
+        specifier: ../frontend
+        version: link:../frontend
     devDependencies:
       copyfiles:
         specifier: ^2.4.1

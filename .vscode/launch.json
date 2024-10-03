@@ -8,8 +8,8 @@
       "name": "Electron: Main",
       "type": "node",                   //use the node debugger that comes with VS Code
       "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+      "cwd": "${workspaceRoot}/packages/electron",
+      "runtimeExecutable": "${workspaceFolder}/packages/electron/node_modules/.bin/electron",
       "runtimeArgs": [
         "--remote-debugging-port=9223"  //open debugging port for renderer process
       ],
@@ -27,7 +27,7 @@
       "type": "chrome",                 //use the Chrome debugger that comes with VS Code
       "request": "attach",
       "port": 9223,                     //use debug port opened in Electron: Main configuration
-      "webRoot": "${workspaceFolder}",
+      "webRoot": "${workspaceFolder}/packages/electron",
       "timeout": 30000
     }
   ],
