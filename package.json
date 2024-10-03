@@ -2,6 +2,7 @@
   "name": "electron_typescript_vscode",
   "version": "1.0.0",
   "main": "build/main.js",
+  "type": "module",
   "scripts": {
     "compile": "tsc",
     "start": "npm run compile && electron ."

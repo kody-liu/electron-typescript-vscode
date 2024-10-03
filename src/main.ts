@@ -9,7 +9,7 @@ app.once('ready', () => {
         height: 400
     });
 
-    const rendererHtmlPath = path.join(`${__dirname}/renderer.html`);
+    const rendererHtmlPath = path.join(`${import.meta.dirname}/../public/renderer.html`);
     win.loadFile(rendererHtmlPath).then(() => {
         // some implementation here
     }).catch(e => console.error(e));
