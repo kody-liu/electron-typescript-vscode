@@ -4,7 +4,7 @@
   "main": "build/main.js",
   "type": "module",
   "scripts": {
-    "compile": "tsc",
+    "compile": "tsc && copyfiles -u 1 src/*.html build",
     "start": "npm run compile && electron ."
   },
   "author": "Andreas Bartho",

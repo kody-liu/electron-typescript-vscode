@@ -1,3 +1,3 @@
-function changeBackgroundColor(): void {
+export function changeBackgroundColor(): void {
     document.body.style.backgroundColor = 'blue';
 }
